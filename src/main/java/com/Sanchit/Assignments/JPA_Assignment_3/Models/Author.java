@@ -20,21 +20,22 @@ public class Author {
     private String name;
     private String phoneNumber;
     private String email;
-
+    //q2
     @Embedded
     private Address address;
-
+//q3
     @ElementCollection
     private List<String> subjects;
-
+//q6
 //    @OneToOne(cascade = CascadeType.ALL)
 //    @JoinColumn(name = "book_id",referencedColumnName = "id")
-
+//q7
 //    @OneToMany(cascade = CascadeType.PERSIST)
 //    @JoinColumn(name = "author_id")
 
 //    @OneToMany(mappedBy = "author", cascade = CascadeType.PERSIST)
-
+//q7 bidirec
+//q8
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(
             name = "author_book_map",

@@ -26,6 +26,7 @@ class JpaAssignment3ApplicationTests {
 
 	@Test
 	@Transactional
+	//q4andq6
 	void saveAuthors()
 	{
 		Book book = new Book("The Adventures of Tintin");
@@ -34,7 +35,7 @@ class JpaAssignment3ApplicationTests {
 		Book book4 = new Book("Star Trek");
 		Book book5 = new Book("Harry Potter");
 		Book book6 = new Book("Beauty and the beast");
-
+//subjects-scifi,fantasy
 		Address address=new Address("144/SEZ","Noida","Uttar Pradesh");
 		Author author=new Author("Sanchit Arora","123456789","kr@gmail.com",
 				Arrays.asList("Sci-Fi","Fantasy", "Isekai"), address, Arrays.asList(book,book2));
@@ -79,7 +80,7 @@ class JpaAssignment3ApplicationTests {
 				Arrays.asList("Sci-Fi","Satire", "Space"), address3, Arrays.asList(book5,book6,book2,book4));
 		authorRepository.save(author3);
 	}
-
+//q9
 	@Test
 	@Transactional
 	 void testCache() {

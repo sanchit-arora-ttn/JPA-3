@@ -10,6 +10,7 @@ import java.util.List;
 @Getter
 @Setter
 //@ToString
+//q5
 @Entity
 public class Book {
     @Id
@@ -17,10 +18,12 @@ public class Book {
     private Long id;
 
     private String bookName;
-
+//q7
 //    @ManyToOne
-//    @JoinColumn(name = "author_id")
+    // bidirectional
 
+//    @JoinColumn(name = "author_id")
+//q8
     @ManyToMany(mappedBy = "books")
     private List<Author> author;
 
